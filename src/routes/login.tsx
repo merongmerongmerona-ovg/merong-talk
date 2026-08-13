@@ -1,9 +1,13 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { useAppStore } from "@/store/app-store";
 import { ShieldAlert, Check } from "lucide-react";
 
-export function LoginRoute() {
+// 루트('/') 경로 진입 시 로그인 페이지가 뜨도록 지정
+export const Route = createFileRoute("/")({ component: LoginRoute });
+
+function LoginRoute() {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
   const [showPermissions, setShowPermissions] = useState(false);
