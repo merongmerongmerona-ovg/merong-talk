@@ -1,0 +1,9 @@
+{
+  "short_name": "메롱톡",
+  "name": "메롱톡 - 악마의 메신저",
+  "icons": [],
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone"
+}
